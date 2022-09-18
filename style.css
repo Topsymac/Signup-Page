@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+
+@media (max-width: 676px) {
+    .left {
+        display: none;
+    }
+    .body-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .right-body-form {
+        width: 95%;
+        margin: 0;
+    }
+}
+
+.left {
+    background-image: linear-gradient(140deg, #2733C4, #2733C4, #2733C4, #9F19D1);
+}
+
+.leftImage {
+    width: 80%;
+}
+
+.logoImage {
+    width: 70px;
+    padding: 50px 30px;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.right {
+    background-color: #020717;
+    color: #fff;
+}
+
+.navbar-text {
+    text-align: right;
+    padding: 50px 30px;
+    color: #E8E9EBCC;
+}
+
+.navbar-text a {
+    text-decoration: none;
+    color: #6E97F5;
+}
+
+.right-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.right-body-form {
+    width: 50%;
+    margin: auto;
+    /* padding: 100px 200px; */
+}
+
+@media (max-width:280px) {
+    .right-body-form {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.right-body-text {
+    text-align: center;
+}
+
+.right-body-form label {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.right-body-form input {
+    /* width: 70%; */
+    padding: 15px;
+    border: 1px solid #91A0CE6E;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.right-body-form p {
+    background-color: transparent;
+    letter-spacing: -0.28px;
+    font-size: 12px;
+}
+
+.right-body-form button {
+    padding: 10px 40px;
+    margin: 20px 2px;
+    background-color: #0165FF;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.right-body-form p {
+    color: #91A0CED8;
+}
+
+.right-body-form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:1280px) {
+    .right-body-form {
+        width: 70%;
+    }
+    .leftImage {
+        width: 75%;
+    }
+}
+
+.one {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.passwordEye {
+    width: 23px;
+    position: absolute;
+    left: 1080px;
+    top: 380px;
+}
+
+.one>input,
+label {
+    display: inline;
+    padding-bottom: 10px;
+}
+
+.image-button {
+    background-color: transparent;
+}
+
+.emailSection {
+    position: relative;
+}
+
+.fa-envelope {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #91A0CE6E;
+}
+
+.emailInput {
+    text-indent: 1.6rem;
+    width: 100%;
+    color: #fff;
+}
+
+.passwordInput {
+    width: 100%;
+    text-indent: 1.4rem;
+    color: #fff;
+}
+
+.passwordSection {
+    position: relative;
+}
+
+.fa-lock {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #91A0CE6E;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    color: #91A0CE6E;
+}
