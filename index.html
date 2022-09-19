@@ -34,6 +34,7 @@
                     <div class="right-body-text">
                         <h1>Sign up</h1>
                     </div>
+                    <p id="error_div"></p>
                     <div class="one">
                         <form action="">
                             <label for="fname">Email address</label><br>
@@ -43,7 +44,7 @@
                             </div>
                             <label for="lname">Password</label><br>
                             <div class="passwordSection">
-                                <input type="password" id="Password" name="password" value="" placeholder="Enter Password" class="passwordInput" required><br><br>
+                                <input type="password" id="password" name="password" value="" placeholder="Enter Password" class="passwordInput" required><br><br>
                                 <i class="fa fa-lock "></i>
                                 <i class="fa fa-eye"></i>
 
@@ -51,13 +52,13 @@
 
                             <label for="lname">Confirm Password</label><br>
                             <div class="passwordSection">
-                                <input type="password" id="Password" name="password" value="" placeholder="Confirm Password" class="passwordInput" required><br><br>
+                                <input type="password" id="confirmpassword" name="password" value="" placeholder="Confirm Password" class="passwordInput" required><br><br>
                                 <i class="fa fa-lock "></i>
                                 <i class="fa fa-eye"></i>
 
                             </div>
                             <p class="form-text">By signing up, I agree that i'm 18 years of age or older. I also agree to the <span><a href="">Terms of service and Privacy policy</a></span> </p>
-                            <button type="submit" value="Sign up">Sign up</button>
+                            <button type="button" value="sign up" id="sign-up" onclick="submitHandler()">Sign up</button>
                         </form>
                     </div>
 
@@ -66,7 +67,7 @@
         </div>
     </section>
 
-
+    <script src="/script.js"></script>
 </body>
 
 </html>
